@@ -44,6 +44,8 @@ node_modules/
 # Bower Files
 # --------------------
 .bower-*/
+.idea/
+nbproject/
 bower_components
 
 # --------------------
