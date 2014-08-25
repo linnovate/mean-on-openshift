@@ -26,6 +26,7 @@
     "postinstall": "HOME=$HOME/app-root/runtime node node_modules/bower/bin/bower install"
   },
   "dependencies": {
+    "ms": "^0.6.2",
     "assetmanager": "^1.1.1",
     "body-parser": "^1.2.0",
     "bower": "^1.3.3",
