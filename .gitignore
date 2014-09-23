@@ -46,7 +46,6 @@ node_modules/
 .bower-*/
 .idea/
 nbproject/
-bower_components
 
 # --------------------
 # App Files
