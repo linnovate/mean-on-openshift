@@ -171,23 +171,12 @@ We pre-included an article example. Check out:
   * [The AngularJs Controller](packages/articles/public/controllers/articles.js) - Where we take care of  our frontend logic.
   * [The AngularJs Views Folder](packages/articles/public/views) - Where we keep our CRUD views.
 
-## Heroku Quick Deployment
-Before you start make sure you have the [Heroku toolbelt](https://toolbelt.heroku.com/)
-installed and an accessible MongoDB instance - you can try [MongoHQ](http://www.mongohq.com/)
-which has an easy setup).
+## OpenShift Quick Deployment
+You can create your application from the command line with this command:
 
-Add the db string to the production env in server/config/env/production.js.
+    rhc app create mean nodejs-0.10 mongodb-2.4 --env NODE_ENV=production --from-code https://github.com/linnovate/mean-on-openshift.git
 
-```
-git init
-git add .
-git commit -m "initial version"
-heroku apps:create
-heroku config:add NODE_ENV=production
-heroku config:add BUILDPACK_URL=https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git
-git push heroku master
-heroku config:set NODE_ENV=production
-```
+Or you can launch it from the [OpenShift Online QuickStart](https://www.openshift.com/quickstarts/mean)
 
 ## More Information
   * Visit us at [Linnovate.net](http://www.linnovate.net/).
